@@ -1,6 +1,7 @@
 .App, .Inp__details{
   max-width: 70vw;
   margin: 0 auto;
+  font-family: 'Inter' sans-seriff;
 }
 
 .App {
@@ -164,7 +165,7 @@ textarea,
 
 [type='checkbox'],
 [htmlFor="agreement"] {
-  font-weight: 300;
+  font-weight: 400;
   color: #475467;
   line-height: 24px;
   font-size: 16px;
