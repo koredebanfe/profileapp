@@ -1,5 +1,5 @@
 import React from "react";
-import '../App.css';
+import '../App.css'
 import shareBtn from '../img/shareBtn.png';
 import shareMobile from '../img/shareMobile.png';
 import mypassport from '../img/mypassport.jpg';
@@ -17,26 +17,27 @@ function ProfileId() {
                 alt= "shareMobile"
                 id='shareMobile'
                 />
+
             </div>
 
             <img src={mypassport} 
-        alt='mypassport'
-        id='profile__img'
-        />
+                alt='mypassport'
+                id='profile__img'
+                />
 
-        <h3>
-            Oluwakorede Banfe
-        </h3>
+                <h3>
+                   Oluwakorede Banfe
+                </h3>
 
-        <p id='slack' hidden>
+            <p id='slack' hidden>
                slack Username: Serah
-        </p>
+            </p>
 
-        <div>
-            <a href="https://twitter.com/serahkore">
-                Twitter Link
-            </a>
-        </div>
+            <div>
+                <a href="https://twitter.com/serahkore">
+                    Twitter Link
+                </a>
+            </div>
        </div>
     )
 }
