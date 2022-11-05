@@ -1,38 +1,166 @@
-.App {
+.App, .Inp__details{
+  max-width: 70vw;
+  margin: 0 auto;
+}
+
+#profile__img {
+  height: 88px;
+  width: 88px;
+  border-radius: 50%;
+}
+
+img {
+	margin-top: 3em;
+}
+
+a,
+button {
+	display: block;
+	background-color: #EAECF0;
+	border-radius: 10px;
+	margin-top: 1em;
+	padding: 1em 0;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+footer {
+  border-top: 1px solid rgb(218, 214, 214);
+  padding-bottom: 2em;
+  max-width: 70vw;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.socials {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 3em;
+}
+
+.socials div {
+  margin-left: 15px;
+}
+
+#hng__logo{
+ justify-self: center;
+ font-size: 0.8em;
+ color: grey;
+ margin-bottom: -3em;
+}
+
+.service{
+  display: none;
+  
+}
+
+a:hover .service  {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: -10px;
+  
+}
+
+.share {
+  text-align: right;
+  margin-bottom: -3em;
+  margin-right: 7em;
+}
+
+#shareMobile {
+  display: none;
+}
+
+@media  screen and (max-width:700px) {
+  #share {
+    display: none;
+  }
+
+  #shareMobile {
+    display: block;
+    margin-left: 60vw;
+    margin-right: 20vw ;
+  }
+}
+
+.inp__details {
+  color: #475467
+}
+
+
+@media screen and (min-width:700px) {
+	footer,
+  #personal_details {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+  .Inp__details {
+    max-width: 40vw;
+  }
+
+  #first_name,
+  #last_name {
+    max-width: 85%;
+  }
+
+}
+
+.Inp__details h2 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: 2em;
+  line-height: 44px;
+  color: #101828;
+}
+
+.Inp__details p {
+  font-weight: 400;
+  color: #475467;
+  line-height: 28px;
+  font-size: 1.125em;
+}
+
+label {
+  font-size: 0.875em;
+  line-height: 20px;
+  color: #344054;font-weight: 500;
+}
+
+.Inp__details #btn__submit {
+  background-color: #1570EF;
   color: white;
+  margin-bottom: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+#first_name,
+#last_name,
+#email,
+textarea,
+#btn__submit {
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  padding: 10px 14px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#agreement {
+  font-weight: 400;
+  color: #475467;
 }
+
+[htmlFor="agreement"] {
+  margin-bottom: 10em;
+}
+
+textarea {
+  resize: none;
+  
+}
+
